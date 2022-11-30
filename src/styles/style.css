@@ -13,31 +13,118 @@
 
 @font-face {
   font-family: "Open Sans";
+  font-weight: 400;
   src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
   font-family: "Neucha";
+  font-weight: 400;
   src: url("../fonts/Neucha-Regular.ttf");
 }
 
 body {
-  font: 16px/1.6em #2A2626 "Open Sans", normal;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: var(--dark);
 }
 
-h1 h2 h3 h4 {
-  font-family: "Neucha", normal;
+h1, h2, h3 {
+  font-family: "Neucha", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2em;
 }
 
 h1 {
-  font: 72px/1.2em;
+  font-size: 72px;
 }
 
 h2 {
-  font: 60px/1.2em;
+  font-size: 60px;
 }
 
 h3 {
-  font: 34px/1.2em;
+  font-size: 34px;
+}
+
+.orange {
+  color: var(--main);
+}
+
+.zero {
+  margin: 0;
+}
+
+.basic {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1440px;
+  height: 914px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: 100px auto;
+}
+
+.basic:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  height: 100%;
+  width: 100%;
+}
+
+.head-img {
+  position: absolute;
+  height: 525px;
+  top: 55px;
+  left: 461px;
+}
+
+.text {
+  display: flex;
+  width: 1100px;
+  margin-top: 201px;
+  gap: 30px;
+}
+
+.split {
+  flex: 1 1 100%;
+}
+
+.em {
+  line-height: 1em;
+}
+
+.about {
+  margin-top: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 148px;
+  height: 49px;
+  background-color: var(--main);
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
