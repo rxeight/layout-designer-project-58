@@ -71,6 +71,14 @@ h3 {
   margin: 0;
 }
 
+.mgt30 {
+  margin-top: 30px;
+}
+
+.mgb30 {
+  margin-bottom: 30px;
+}
+
 .bglight {
   background-color: var(--light);
 }
@@ -156,14 +164,10 @@ h3 {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
-.mgb30 {
-  margin-bottom: 30px;
-}
-
 #navigation {
   display: flex;
   width: 1440px;
-  height: 891px;
+  height: 991px;
   z-index: -1;
   background-color: var(--main-dark);
 }
@@ -172,7 +176,7 @@ h3 {
   display: flex;
   flex-direction: column;
   max-width: 1100px;
-  margin: 100px 165px;
+  margin: 100px 165px 200px 165px;
   gap: 20px;
 }
 
@@ -208,8 +212,72 @@ h3 {
 
 .number {
   margin-bottom: 40px;
-  font-family: "Neucha";
+  font-family: "Neucha", sans-serif;
   font-size: 64px;
   line-height: 1em;
 }
 
+#ikea-effect {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1440px;
+  height: 960px;
+  margin: 100px 165px;
+  background-color: var(--light);
+}
+
+#ikea-effect:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  height: 100%;
+  width: 100%;
+}
+
+.ikeapng {
+  position: relative;
+  z-index: 11111111;
+  vertical-align: middle;
+}
+
+.flex30 {
+  display: flex;
+  gap: 30px;
+}
+
+.kog {
+  font-family: "Neucha", sans-serif;
+  font-size: 24px;
+  line-height: 1.2em;
+}
+
+.trans-dark {
+  color: var(--translucent-dark);
+}
+
+.kogdesc {
+  font-family: "Neucha", sans-serif;
+  font-size: 34px;
+  line-height: 1.2em;
+}
+
+.proyav-ikea {
+  width: 1100px;
+  height: 26px;
+  margin: 100px 0px 20px;
+  padding-left: 10px;
+  background-color: var(--brown);
+}
+
+h4 {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
