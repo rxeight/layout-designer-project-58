@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header class="base bglight bg-questions">
-    <section class="content">
+  <header class="base bglight bg-questions" id="header">
+    <section class="content fcolumn">
       <div>
         <h1 class="zero"><span class="orange">Когнитивные<br>искажения</span><br>
         <span class="em">в программировании</span></h1>
-        <img class="head-img" src="../src/images/main.png" alt="main">
+        <img class="" src="../src/images/main.png" alt="main">
       </div>
       <div class="text">
         <div class="split">
@@ -30,14 +30,14 @@
     </section>
   </header>
   <div class="base" id="video-section">
-    <section class="content">
+    <section class="content fcolumn">
       <h1 class="zero mgb30">Что же это такое,<br><span class="orange">когнитивные искажения?</span></h1>
       <span class="mgb30">Что такое когнитивные искажения. Petrovna Channel</span>
       <iframe class="video" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" frameborder="0" allowfullscreen></iframe>
     </section>
   </div>
   <nav id="navigation">
-    <div class="content nav">
+    <div class="content fcolumn nav">
       <div class="cards">
         <div class="card1">
           <h1 class="zero"><span class="orange">5 когнитивных искажений</span><br><span class="white">о существовании которых стоит помнить</span></h1>
@@ -74,7 +74,7 @@
   </nav>
   <main>
     <section class="base bglight bg-questions" id="ikea-effect">
-      <div class="content">
+      <div class="content fcolumn">
         <div class="flex30">
           <div>
             <img class="section-img" src="../src/images/1.png" alt="ikea-effect">
@@ -99,7 +99,7 @@
       </div>
     </section>
     <section class="base bgbrown bg-questions" id="premature-optimization">
-      <div class="content">
+      <div class="content fcolumn">
         <div class="flex30">
           <div>
             <span class="kog twhite">Когнитивные искажения</span>
@@ -124,7 +124,7 @@
       </div>
     </section>
     <section class="base bglight bg-questions" id="distortion-of-novelty">
-      <div class="content">
+      <div class="content fcolumn">
         <div class="flex30">
           <div>
             <img class="section-img" src="../src/images/3.png" alt="#distortion-of-novelty">
@@ -149,7 +149,7 @@
       </div>
     </section>
     <section class="base bgbrown bg-questions" id="hyperbolic-depreciation">
-      <div class="content">
+      <div class="content fcolumn">
         <div class="flex30">
           <div>
             <span class="kog twhite">Когнитивные искажения</span>
@@ -174,7 +174,7 @@
       </div>
     </section>
     <section class="base bglight bg-questions" id="errors-in-planning">
-      <div class="content">
+      <div class="content fcolumn">
         <div class="flex30">
           <div>
             <img class="section-img" src="../src/images/5.png" alt="#errors-in-planning">
@@ -199,6 +199,27 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer class="base" id="footer">
+    <div class="content fcolumn">
+      <div class="form bgdark">
+        <div class="split mgl55">
+          <h3 class="zero white">Хотите узнать больше?<br>Подпишитесь на обновления</h3>
+        </div>
+        <div class="split mgr55">
+          <span class="white f18">Электронная почта</span>
+          <form class="zero" action="">
+            <input type="text" placeholder="Ваша электронная почта">
+            <button></button>
+          </form>
+          <span class="white f12">Подписываясь, вы принимаете <a href="">правила сервиса<</a></span>
+        </div>
+      </div>
+      <div class="copirate">
+        <p>© 2020 rxeight</p>
+        <p>По материалам статьи <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b">Yash Ranadive Cognitive Biases in Programming</a></p>
+        <p><a href="https://ru.hexlet.io/">Курсы программирования Hexlet</a></p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
