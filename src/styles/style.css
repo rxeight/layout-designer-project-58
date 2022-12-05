@@ -16,36 +16,39 @@
 /** FONTS **/
 
 @font-face {
-  font-family: "Open Sans";
   font-weight: 400;
+  font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Open Sans";
   font-weight: 700;
+  font-family: "Open Sans";
   src: url("../fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
-  font-family: "Neucha";
   font-weight: 400;
+  font-family: Neucha;
   src: url("../fonts/Neucha-Regular.ttf");
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.6em;
+  font-family: "Open Sans", sans-serif;
   color: var(--dark);
+
   margin: 0;
+  line-height: 1.6em;
 }
 
-h1, h2, h3 {
-  font-family: "Neucha", sans-serif;
-  font-style: normal;
+h1,
+h2,
+h3 {
   font-weight: 400;
+  font-family: Neucha, sans-serif;
+  font-style: normal;
   line-height: 1.2em;
 }
 
@@ -68,9 +71,11 @@ h3 {
 .f18 {
   font-size: 18px;
 }
+
 /** BASIC **/
 .base {
   position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,7 +237,7 @@ a.card:hover h3{
 
 .number {
   margin-bottom: 40px;
-  font-family: "Neucha", sans-serif;
+  font-family: Neucha, sans-serif;
   font-size: 64px;
   line-height: 1em;
 }
@@ -259,13 +264,13 @@ a.card:hover h3{
 }
 
 .kog {
-  font-family: "Neucha", sans-serif;
+  font-family: Neucha, sans-serif;
   font-size: 24px;
   line-height: 1.2em;
 }
 
 .kogdesc {
-  font-family: "Neucha", sans-serif;
+  font-family: Neucha, sans-serif;
   font-size: 34px;
   line-height: 1.2em;
 }
