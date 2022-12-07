@@ -13,7 +13,7 @@
     <section class="content fcolumn">
       <div class="head-title">
         <h1 class="zero"><span class="orange">Когнитивные<br>искажения</span><br>
-        <span class="em">в программировании</span></h1>
+        <span>в программировании</span></h1>
         <img class="head-img" src="./images/main.png" alt="main">
       </div>
       <div class="text">
@@ -206,17 +206,21 @@
   </main>
   <footer class="base" id="footer">
     <div class="content fcolumn">
-      <div class="form bgdark">
-        <div class="split mgl55">
+      <div class="foot bgdark">
+        <div class="side">
           <h3 class="zero white">Хотите узнать больше?<br>Подпишитесь на обновления</h3>
         </div>
-        <div class="split mgr55">
-          <span class="white f18">Электронная почта</span>
-          <form class="zero" action="">
-            <input type="text" placeholder="Ваша электронная почта">
-            <button></button>
+        <div class="side">
+          <form action="#">
+            <label class="white" for="mail">
+              Электронная почта
+            </label>
+            <input id="email-field" type="email" placeholder="Ваша электронная почта" name="mail" required/>
+            <button class="btn"></button>
+            <div class="white subscription-agreement">
+              Подписываясь, вы принимаете <a href="#" class="rules">правила сервиса</a>
+            </div>
           </form>
-          <span class="white f12">Подписываясь, вы принимаете <a href="">правила сервиса</a></span>
         </div>
       </div>
       <div class="copirate">
