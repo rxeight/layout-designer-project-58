@@ -1,7 +1,7 @@
 /** CSS STYLE **/
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 /** COLOR POOL **/
 :root {
@@ -19,24 +19,27 @@
 /** FONTS **/
 body {
   box-sizing: border-box;
-  font-weight: 400;
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  color: var(--dark);
 
   margin: 0;
+
+  color: var(--dark);
+
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6em;
 }
 
 h1,
 h2,
 h3 {
-  font-weight: 400;
-  font-family: 'Neucha', cursive;
-  font-style: normal;
-  line-height: 1.2em;
 
   margin: 0 auto;
+
+  font-weight: 400;
+  font-family: Neucha, cursive;
+  font-style: normal;
+  line-height: 1.2em;
 }
 
 h1 {
@@ -62,6 +65,7 @@ h3 {
 /** BASIC **/
 .base {
   position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,6 +73,7 @@ h3 {
 
 .content {
   position: relative;
+
   display: flex;
   max-width: 1110px;
   margin: 100 auto;
@@ -107,17 +112,21 @@ h3 {
 .tdark {
   color: var(--translucent-dark);
 }
+
 /** BACKGROUNDS **/
-.bg-questions:before {
+.bg-questions::before {
   position: absolute;
+
   display: block;
-  content: "";
+  width: 100%;
+  height: 100%;
+
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
-  height: 100%;
-  width: 100%;
+
+  content: "";
 }
 
 .bglight {
@@ -131,7 +140,8 @@ h3 {
 .bgdark {
   background-color: var(--main-dark);
 }
-/** HEADER**/
+
+/** HEADER **/
 
 .head-title {
   margin-bottom: 185px;
@@ -141,42 +151,51 @@ h3 {
   position: absolute;
   top: -45px;
   right: -270px;
+
   width: auto;
   height: 525px;
 }
 
 .about {
-  margin-top: 24px;
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin-top: 24px;
   padding: 12px 24px;
-  background-color: var(--main);
+
   color: var(--white);
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+
+  background-color: var(--main);
 }
 
 .about:hover {
-  background-color: #EA7600;
+  background-color: #ea7600;
 }
+
 /** VIDEO SECTION **/
 #video-section {
   text-align: center;
+
   background-color: var(--white);
 }
 
 .video {
   position: relative;
-  margin-top: -170px;
   top: 200px;
   z-index: 11111;
+
+  margin-top: -170px;
+
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
+
 /** NAVIGATION **/
 #navigation {
   padding-top: 100px;
+
   background-color: var(--main-dark);
 }
 
@@ -191,11 +210,12 @@ h3 {
 
 .card {
   display: flex;
-  text-decoration: none;
   flex-direction: column;
   max-width: 302px;
   max-height: 300px;
   padding: 24px;
+
+  text-decoration: none;
 }
 
 .topcard {
@@ -207,16 +227,18 @@ h3 {
   padding: 0;
 }
 
-a.card:visited, a.card:link {
+a.card:visited,
+a.card:link {
   color: #2a2626;
 }
 
 a.card:hover {
+  color: var(--white);
+
   background-color: var(--main);
-  color: var(--white); 
 }
 
-a.card:hover h3{
+a.card:hover h3 {
   color: var(--white);
 }
 
@@ -227,8 +249,9 @@ a.card:hover h3{
 
 .number {
   margin-bottom: 40px;
-  font-family: 'Neucha', cursive;
+
   font-size: 64px;
+  font-family: Neucha, cursive;
   line-height: 1em;
 }
 
@@ -236,33 +259,35 @@ a.card:hover h3{
 .section-img {
   position: relative;
   z-index: 11111111;
+
   vertical-align: middle;
-  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 .band-section {
   width: 1110px;
   height: 26px;
-  margin: 100px 0px 4px;
+  margin: 100px 0 4px;
   padding-left: 10px;
 }
 
 .kog {
-  font-family: 'Neucha', cursive;
   font-size: 24px;
+  font-family: Neucha, cursive;
   line-height: 1.2em;
 }
 
 .kogdesc {
-  font-family: 'Neucha', cursive;
   font-size: 34px;
+  font-family: Neucha, cursive;
   line-height: 1.2em;
 }
 
 h4 {
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
 }
 
@@ -281,15 +306,16 @@ h4 {
 /** FOOTER **/
 .foot {
   display: flex;
-  box-sizing: border-box;
   justify-content: space-between;
+  box-sizing: border-box;
   width: 1110px;
   height: 190px;
-  padding: 0 55px 0 55px;
+  padding: 0 55px;
 }
 
 form {
   position: relative;
+
   display: flex;
   flex-direction: column;
   margin-top: 38px;
@@ -300,13 +326,14 @@ form {
 }
 
 .inp {
-  display:flex;
+  display: flex;
   margin-top: 9px;
 }
 
 input {
   display: block;
   padding: 15px;
+
   border: 0;
   outline: 0;
 }
@@ -318,6 +345,7 @@ input {
 
 .butt {
   position: relative;
+
   display: block;
   width: 70px;
   height: 50px;
@@ -332,26 +360,27 @@ input {
 
 .butt::before {
   position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   content: url("../images/send.svg");
 }
 
 .butt:hover {
-  background-color: #EA7600;
+  background-color: #ea7600;
 }
 
 .copirate {
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 60px;
 }
 
 .copirate p {
-  font-size: 14px;
   margin-bottom: 8px;
+
+  font-size: 14px;
 }
-
-
