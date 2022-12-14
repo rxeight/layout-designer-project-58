@@ -170,7 +170,7 @@ h3 {
 .video {
   position: relative;
   margin-top: -170px;
-  top: 200px;
+  top: 208px;
   z-index: 11111;
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
@@ -194,7 +194,12 @@ h3 {
   text-decoration: none;
   flex-direction: column;
   max-width: 302px;
+  max-height: 300px;
   padding: 24px;
+}
+
+.topcard {
+  max-height: 275px;
 }
 
 .padz {
