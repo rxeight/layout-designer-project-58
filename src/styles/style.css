@@ -383,3 +383,9 @@ input {
 
   font-size: 14px;
 }
+
+.sub a:visited,
+.sub a:link {
+  color: var(--white);
+}
+
